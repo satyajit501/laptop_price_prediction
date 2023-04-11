@@ -36,7 +36,7 @@ draft_template = go.layout.Template()
 draft_template.layout.annotations = [
     dict(
         name="draft watermark",
-        text="Ritwik",
+        text="Satyajit",
         textangle=-30,
         opacity=0.1,
         font=dict(color="red", size=100),
@@ -67,7 +67,7 @@ col1.plotly_chart(fig1, use_container_width=True)
 
 total_freq = df.processor.value_counts()[:10]
 fig2 = go.Figure(
-    data=[go.Pie(labels=total_freq.index, values=total_freq, pull=[0, 0.2], hole=0.3, title="<b> RITWIK </b>")])
+    data=[go.Pie(labels=total_freq.index, values=total_freq, pull=[0, 0.2], hole=0.3, title="<b> Satyajit </b>")])
 fig2.update_traces(textposition="inside", textinfo="percent+label")
 fig2.update_layout(paper_bgcolor="lightblue", title="<b> Total Brands Processor Wise(TOP 10)")
 fig2.update_layout(
